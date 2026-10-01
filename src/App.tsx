@@ -136,7 +136,7 @@ function Company() {
 function ProjectGraphic({ project }: { project: Project }) {
   return <div className={`project-graphic graphic-${project.id}`}>
     {project.id === "habitual" && <><div className="habit-ring">82<i>%</i></div><div className="habit-bars">{Array.from({ length: 28 }).map((_, i) => <i key={i} className={i % 5 === 0 || i > 20 ? "on" : ""} />)}</div><span>CONSISTENCY / 04 WEEKS</span></>}
-    {project.id === "sctm" && <div className="nodes">{Array.from({ length: 8 }).map((_, i) => <i key={i} style={{ "--i": i } as React.CSSProperties} />)}<b>MEMORY<br />CONTEXT<br />SYSTEM</b></div>}
+    {project.id === "evidence-memory" && <div className="nodes">{Array.from({ length: 8 }).map((_, i) => <i key={i} style={{ "--i": i } as React.CSSProperties} />)}<b>EVIDENCE<br />CONTEXT<br />MEMORY</b></div>}
     {project.id === "tetris" && <div className="tetris-stack">{Array.from({ length: 22 }).map((_, i) => <i key={i} className={i > 13 || [3, 8, 11].includes(i) ? "filled" : ""} />)}<b>004280</b></div>}
     {project.id === "capsule" && <div className="capsule-type"><small>ISSUE / 04</small><b>CODE<br />CAPSULE</b><span>Readable technology,<br />one idea at a time.</span></div>}
     {project.id === "spark" && <div className="spark-mark"><b>✳</b><span>FIND YOUR PEOPLE.<br />MAKE SOMETHING.</span></div>}

@@ -24,6 +24,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
     year: "CURRENT",
     role: "Product design & development",
+    link: "https://habitual-forge.vercel.app/",
     state: "FLAGSHIP PRODUCT",
     caseStudy: [
       { label: "Problem", copy: "Habit tools can record activity without helping people understand consistency." },
@@ -34,22 +35,22 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "sctm",
+    id: "evidence-memory",
     number: "02",
-    title: "SCTM",
-    category: "AI RESEARCH × MEMORY SYSTEMS",
+    title: "EVIDENCE-CALIBRATED MEMORY",
+    category: "AI AGENTS × RESEARCH × MEMORY SYSTEMS",
     description:
-      "An experimental exploration of AI memory, long-term context, model behavior and the systems around them.",
-    tech: ["AI Systems", "Research", "Python", "System Design"],
+      "An early-stage research framework for making long-horizon AI agent memory more reliable, contextual and evidence-aware.",
+    tech: ["AI Agents", "LLM Memory", "Python", "Evaluation Design"],
     year: "CURRENT",
-    role: "Research & experimentation",
-    state: "EXPERIMENTAL",
+    role: "Research & system design",
+    state: "RESEARCH PROPOSAL",
     caseStudy: [
-      { label: "Problem", copy: "Long-running AI systems face practical questions around context and memory degradation." },
-      { label: "Idea", copy: "Study memory as a system design problem rather than treating context as an unlimited resource." },
-      { label: "Process", copy: "Frame questions, examine behavior and map the architecture around persistent context." },
-      { label: "Build", copy: "A research-led technical exploration of memory structures and model behavior." },
-      { label: "Current state", copy: "Ongoing experimentation. No research outcome is claimed." },
+      { label: "Problem", copy: "Confidence, usage and recency alone cannot show whether an agent memory is supported, current or relevant." },
+      { label: "Idea", copy: "Treat each memory as a revisable belief with evidence, provenance, validity, context and conflict links." },
+      { label: "Process", copy: "Define write, retrieval and forgetting policies, then compare them against confidence-based memory under a fixed budget." },
+      { label: "Build", copy: "A proposed memory manager and controlled stress test for false, stale, contradictory and out-of-scope memories." },
+      { label: "Current state", copy: "Early-stage research proposal with experiments and evaluation still to be completed; no outcome is claimed." },
     ],
   },
   {
@@ -82,6 +83,7 @@ export const projects: Project[] = [
     tech: ["Content Architecture", "Web", "Information Design"],
     year: "CURRENT",
     role: "Product & interface design",
+    link: "https://codecapsule.framer.website/",
     state: "CONCEPT",
     caseStudy: [
       { label: "Problem", copy: "Technical content often becomes dense before a reader finds a useful entry point." },
@@ -101,6 +103,7 @@ export const projects: Project[] = [
     tech: ["Product Thinking", "UX", "Community Design"],
     year: "CURRENT",
     role: "Concept & UX",
+    link: "https://spark-community.vercel.app/",
     state: "CONCEPT",
     caseStudy: [
       { label: "Problem", copy: "Students with aligned interests do not always have a clear path to find collaborators." },
