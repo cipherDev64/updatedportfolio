@@ -15,6 +15,10 @@ export type Project = {
   slug: string;
   title: string;
   category: "Design" | "Development" | "Product" | "Research";
+  /** Where the work came from: the studio, my own products, or research. */
+  group: "Studio" | "Products" | "Research";
+  /** Finder "Kind" column. */
+  kind: "Studio site" | "Client site" | "Live app" | "Concept" | "Research";
   year: string;
   icon: ProjectIcon;
   /** Tile colour for the dock icon and project mark. */
@@ -31,6 +35,8 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "second-algorithm",
+    kind: "Studio site",
+    group: "Studio",
     title: "Second Algorithm",
     category: "Design",
     year: "2026",
@@ -62,6 +68,8 @@ export const projects: Project[] = [
   },
   {
     slug: "urban-premium-coworks",
+    kind: "Client site",
+    group: "Studio",
     title: "Urban Premium Coworks",
     category: "Development",
     year: "2026",
@@ -87,6 +95,8 @@ export const projects: Project[] = [
   },
   {
     slug: "windecor-interiors",
+    kind: "Client site",
+    group: "Studio",
     title: "Windecor Interiors",
     category: "Design",
     year: "2026",
@@ -112,6 +122,8 @@ export const projects: Project[] = [
   },
   {
     slug: "habitual",
+    kind: "Live app",
+    group: "Products",
     title: "Habitual",
     category: "Product",
     year: "2025",
@@ -143,6 +155,8 @@ export const projects: Project[] = [
   },
   {
     slug: "canvas-tetris",
+    kind: "Live app",
+    group: "Products",
     title: "Canvas Tetris",
     category: "Development",
     year: "2025",
@@ -169,6 +183,8 @@ export const projects: Project[] = [
   },
   {
     slug: "code-capsule",
+    kind: "Concept",
+    group: "Products",
     title: "Code Capsule",
     category: "Design",
     year: "2025",
@@ -193,6 +209,8 @@ export const projects: Project[] = [
   },
   {
     slug: "spark",
+    kind: "Concept",
+    group: "Products",
     title: "Spark",
     category: "Product",
     year: "2025",
@@ -217,6 +235,8 @@ export const projects: Project[] = [
   },
   {
     slug: "evidence-calibrated-memory",
+    kind: "Research",
+    group: "Research",
     title: "Evidence-Calibrated Memory",
     category: "Research",
     year: "2026",
